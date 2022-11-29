@@ -1,0 +1,50 @@
+.accord-visible img {
+  width: 24px;
+  transition: 0.5s ease-in-out;
+}
+
+.accord {
+  max-width: 1023px;
+  height: auto;
+  margin: 31px auto 0;
+  border-radius: 5px;
+}
+
+.accord-visible {
+  background: #ff6060;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+  border-radius: 5px;
+  height: 47px;
+}
+
+.accord-visible h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.accord-toggle {
+  opacity: 0;
+  background: #f6f6f6;
+  transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.animated {
+  opacity: 1;
+  transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+}
+
+.accord-toggle p {
+  margin: 0px;
+  padding: 25px 15px;
+  pointer-events: none;
+  line-height: 34px;
+  font-size: 24px;
+  color: #ff6060;
+}
