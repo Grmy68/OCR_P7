@@ -1,6 +1,6 @@
 article img {
-  width: 340px;
-  height: 340px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   transition-duration: 2000ms;
@@ -10,7 +10,7 @@ article img {
 
 article {
   max-width: 340px;
-  height: 100%;
+  height: 340px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;

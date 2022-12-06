@@ -1,9 +1,11 @@
-
+import React from 'react'
+import "./Tag.css"
 
 export default function Tag({getTag}) {
 
 
-  return <ul>
-    <li className="tag__text">{getTag}</li>
-  </ul>;
+  return (
+    <li className="tag">{getTag}</li>
+  
+  )
 }

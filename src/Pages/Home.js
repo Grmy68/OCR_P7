@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import HousingJson from "../assets/Housing.json";
 import Banner from "../Components/Banner";
 import Thumb from "../Components/Thumb";
-import BannerHome from "../assets/BannerHome.jpg";
+import BannerHome from "../assets/BannerHome.webp";
 // import Thumb from "../Components/Thumb";
 import "./Home.css";
 // import HousingSheet from "./HousingSheet";
