@@ -8,7 +8,7 @@
 }
 
 .logo {
-  max-width: 210px;
+  width: 210px;
   fill: black;
 }
 
@@ -20,14 +20,35 @@
 }
 
 .header-nav {
-    width: 309px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 24px;
+  width: 309px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
 }
 
-.header-nav a:hover, .active {
-    text-decoration: underline;
+.header-nav a:hover,
+.active {
+  text-decoration: underline;
 }
 
+@media screen and (max-width: 1240px){
+  .header {
+    width: 95%;
+  }
+}
 
+@media screen and (max-width: 767px){
+  .header-logo svg {
+    width: 145px;
+  }
+
+  .header-nav {
+        text-transform: uppercase;
+        justify-content: flex-end;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    margin-left: 25px;
+  }
+}

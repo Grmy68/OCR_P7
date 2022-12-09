@@ -5,6 +5,7 @@ import HousingJson from "../assets/Housing.json";
 import Accordeon from "../Components/Accordeon";
 import Carrousel from "../Components/Carrousel";
 import Tag from "../Components/Tag";
+import Rating from "../Components/Rating";
 
 export default function HousingSheet() {
   const { housingId } = useParams();
@@ -15,7 +16,7 @@ export default function HousingSheet() {
   return (
     <>
       <section>
-        <Carrousel />
+        <Carrousel pictures={pictures} />
         <div className="separate-infos-host">
           <div className="housinSheet-infos">
             <h1 className="housingSheet-title">{title}</h1>
@@ -26,24 +27,33 @@ export default function HousingSheet() {
               ))}
             </ul>
           </div>
-
-          <div className="housingSheet-host">
-            <span>{host.name}</span>
-            <img src={host.picture} alt="Photo de l'hôte" />
+          <div className="separate-host-rating">
+            <div className="housingSheet-host">
+              <span>{host.name}</span>
+              <img src={host.picture} alt="Photo de l'hôte" />
+            </div>
+            <div className="housingSheet-rate">
+              <Rating rating={rating}/>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="housingSheet-accordeons">
-        <Accordeon title="Description" content={description} />
-        <Accordeon
-          title="Équipements"
-          content={equipments.map((equipments, index) => (
-            <li className="apartment__dropdowns__list" key={index}>
-              {equipments}
-            </li>
-          ))}
-        />
+        <div className="housing-accord-container">
+          <Accordeon title="Description" content={description} />
+        </div>
+
+        <div className="housing-accord-container">
+          <Accordeon
+            title="Équipements"
+            content={equipments.map((equipments, index) => (
+              <span className="equipments-list" key={index}>
+                {equipments}
+              </span>
+            ))}
+          />
+        </div>
       </section>
     </>
   );

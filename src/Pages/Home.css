@@ -20,5 +20,21 @@
 }
 
 
+@media screen and (max-width: 1240px){
+    main {
+      width: 95%;
+    }
 
+    .banner-home img {
+        margin: auto;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .banner-text {
+        font-size: 32px;
+        top: 7%;
+        width: 70%;
+    }
+  }
 
