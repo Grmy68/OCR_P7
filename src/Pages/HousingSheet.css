@@ -14,6 +14,7 @@
 .housingSheet-tags {
     display: flex;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .housingSheet-tags li {
@@ -24,6 +25,7 @@ font-size: 14px;
 font-weight: 500;
 background-color: #FF6060;
 border-radius: 10px;
+width: max-content;
 }
 
 .housingSheet-host {
@@ -95,4 +97,60 @@ border-radius: 10px;
 
 .star-icon {
     margin: 0 3px;
+}
+
+@media screen and (max-width: 767px) {
+    .housingSheet-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .housingSheet-location {
+        font-size: 14px;
+    }
+
+    .separate-infos-host {
+        flex-direction: column;
+    }
+
+    .separate-host-rating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .star-icon {
+        width: 15px;
+        margin: 0 1px;
+    }
+
+    .housingSheet-host span {
+        font-size: 12px;
+        line-height: inherit;
+        margin-right: inherit;
+    }
+
+    .housingSheet-host img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .housingSheet-rate {
+        margin-top: inherit;
+    }
+
+    .housingSheet-accordeons {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .housing-accord-container {
+        width: 100%;
+    }
+
+    .housing-accord-container .accord-visible h2 { 
+        font-size: 13px;
+    }
 }

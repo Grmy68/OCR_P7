@@ -2,25 +2,55 @@
   width: 100%;
   margin: 70px auto 45px auto;
   overflow: hidden;
-  
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner img {
   width: 100%;
-  position: relative;
   border-radius: 25px;
   filter: brightness(65%);
-  -webkit-filter: brightness(65%); 
+  -webkit-filter: brightness(65%);
+  object-fit: cover;
 }
 
 .banner-text {
-    position: absolute;
-    padding: 40px 267px;
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .banner {
+    margin: 30px auto;
+  }
+
+  .banner-text {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
     width: 100%;
-    top: 0;
-    right: 0;
-    color: #FFFFFF;
-    font-size: 48px;
-    font-weight: 500;
+    height: 111px;
+    margin: 16px auto 22px auto;
+  }
+
+  .banner img {
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .banner-text {
+    font-size: 24px;
+    padding: 0% 24% 0% 5%;
+    text-align: left;
+    margin-left: 16px;
+  }
 }

@@ -19,13 +19,27 @@ article {
 .article-title {
   position: absolute;
   bottom: 0px;
+  display: flex;
+  align-items: flex-end;
   border-radius: 10px;
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
-  padding: 290px 50px 0 10px;
+  padding: 290px 50px 20px 20px;
   width: 100%;
   height: 100%;
   background: -webkit-linear-gradient(to top, #000000df, 25%, #ffffff00 40% ); 
   background: linear-gradient(to top, #000000df, 25%, #ffffff00 40% );
+}
+
+@media screen and (max-width: 991px){
+  article {
+    height: 255px;
+  }
+}
+
+@media screen and (max-width: 767px){ 
+  .article-title {
+    padding: 290px 50px 15px 15px;
+  }
 }

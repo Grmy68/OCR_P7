@@ -23,7 +23,6 @@
   width: 309px;
   display: flex;
   justify-content: space-between;
-  font-size: 24px;
 }
 
 .header-nav a:hover,
@@ -34,15 +33,16 @@
 @media screen and (max-width: 1240px){
   .header {
     width: 95%;
+    margin: 20px auto;
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
   .header-logo svg {
     width: 145px;
   }
 
-  .header-nav {
+  /* .header-nav {
         text-transform: uppercase;
         justify-content: flex-end;
   }
@@ -50,5 +50,24 @@
   .nav-link {
     font-size: 12px;
     margin-left: 25px;
-  }
+  } */
 }
+
+
+@media screen and (max-width: 767px){ 
+.header {
+  margin: 0 auto;
+}
+
+  .header-nav {
+    text-transform: uppercase;
+    justify-content: flex-end;
+}
+
+.nav-link {
+font-size: 12px;
+margin-left: 10px;
+}
+}
+
+
