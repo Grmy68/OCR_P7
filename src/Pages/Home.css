@@ -1,46 +1,57 @@
+.banner-home img {
+  max-height: 223px;
+  border-radius: 25px;
+  object-position: 0px -710px;
+}
+
 .housing-container {
-    background-color: #F7F7F7;
-    border-radius: 25px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 50px 0px;
-    margin:0 auto 50px auto;
-    row-gap: 45px;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 0px;
+  margin: 0 auto 50px auto;
+  row-gap: 45px;
 }
 
 .housing-card:hover article img {
-   scale: 1.2;
-   transition: 5000ms ease-out;
+  scale: 1.2;
+  transition: 5000ms ease-out;
 }
 
-  @media screen and (max-width: 991px){
-    .housing-container {
-padding: 25px 0;
-row-gap: 25px;
-    }
-
-    .housing-card {
-      width: 45%;
-    }
+@media screen and (max-width: 991px) {
+  .banner-home img {
+    object-position: inherit;
+  }
+  .housing-container {
+    padding: 25px 0;
+    row-gap: 25px;
   }
 
-  @media screen and (max-width: 767px){ 
-.housing-container {
-  flex-direction: column;
-  align-items: center;
-  background-color: inherit;
-  padding: 0;
+  .housing-card {
+    width: 45%;
+  }
 }
 
-.housing-card {
-  width: 100%;
-}
-
-.housing-card article {
-  max-width: inherit;
-}
-
+@media screen and (max-width: 767px) {
+  .banner-home img {
+    border-radius: 10px;
   }
 
+  .housing-container {
+    flex-direction: column;
+    align-items: center;
+    background-color: inherit;
+    padding: 0;
+  }
+
+  .housing-card {
+    width: 100%;
+  }
+
+  .housing-card article {
+    max-width: inherit;
+  }
+}

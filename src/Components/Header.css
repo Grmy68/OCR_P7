@@ -33,7 +33,7 @@
 @media screen and (max-width: 1240px){
   .header {
     width: 95%;
-    margin: 20px auto;
+    margin: 25px auto;
   }
 }
 
@@ -41,22 +41,12 @@
   .header-logo svg {
     width: 145px;
   }
-
-  /* .header-nav {
-        text-transform: uppercase;
-        justify-content: flex-end;
-  }
-
-  .nav-link {
-    font-size: 12px;
-    margin-left: 25px;
-  } */
 }
 
 
 @media screen and (max-width: 767px){ 
 .header {
-  margin: 0 auto;
+  margin: 15px auto 20px auto;
 }
 
   .header-nav {
@@ -66,7 +56,7 @@
 
 .nav-link {
 font-size: 12px;
-margin-left: 10px;
+margin-left: 15px;
 }
 }
 

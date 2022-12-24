@@ -4,15 +4,13 @@ import arrowLeft from "../assets/arrowLeft.svg";
 import arrowRight from "../assets/arrowRight.svg";
 
 export default function Carrousel(props) {
-  const [currentPicture, setCurrentPicture] = useState(0, {
-    inProgress: false,
-  });
+  const [currentPicture, setCurrentPicture] = useState(0);
 
   const next = () => {
     if (currentPicture + 1 >= props.pictures.length) {
       setCurrentPicture(0);
     } else {
-      setCurrentPicture(currentPicture + 1, { inProgress: false });
+      setCurrentPicture(currentPicture + 1);
     }
   };
 
