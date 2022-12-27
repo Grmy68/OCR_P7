@@ -1,8 +1,7 @@
 import React from "react";
-// import Logo from "../assets/logo.svg";
 import Logo from "../assets/Logo";
 import "./Header.css"
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -15,7 +14,6 @@ export default function Header() {
         <NavLink className="nav-link" to="/">Accueil</NavLink>
         <NavLink className="nav-link" to="/about">A propos</NavLink>
       </nav>
-      <Outlet />
     </header>
   );
 }
